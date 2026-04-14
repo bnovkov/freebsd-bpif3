@@ -1,0 +1,2 @@
+dtb_addr=0x31000000
+bootcmd=load mmc 0:5 ${dtb_addr} k1-bananapi-f3.dtb; load mmc 0:5 ${kernel_addr_r} loader_lua.efi; bootefi ${kernel_addr_r} ${dtb_addr}
